@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo Web APP</title>
+    <link rel="stylesheet" href="./todo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rowdies:wght@300;400;700&family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="toastBox"></div>
+    <div id="popupOverlay">
+      <div id="deletePopUp">
+        <h3>Are you sure to Delete?</h3>
+        <p>By confirming, the Task will be Deleted.</p>
+        <div class="confirmation">
+          <button id="yes" class="yes">Yes</button>
+          <button id="no" class="no">No</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="container">
+      <div class="head">
+        <h1>Todo App</h1>
+      </div>
+      <div class="input">
+        <input type="text" name="task" id="task" placeholder="Add your Task" />
+        <button class="addTask" id="addTask">Add Task</button>
+      </div>
+      <div class="filter" id="filter">
+        <select name="filterSelect" id="filterSelect">
+          <option value="1">All Tasks</option>
+          <option value="2">Completed Tasks</option>
+          <option value="3">Pending Tasks</option>
+        </select>
+      </div>
+      <div class="listHeader">
+        <div class="taskName">Tasks</div>
+        <div class="updatedDate">Updated Date</div>
+        <div class="updatedTime">Updated Time</div>
+        <div class="action">Action</div>
+      </div>
+      <div class="" id="todoList"></div>
+    </div>
+    <script src="./todo.js"></script>
+  </body>
+</html>
